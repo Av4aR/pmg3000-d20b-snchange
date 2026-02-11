@@ -1,0 +1,15 @@
+{
+  "name": "pmg3000-d20b-snchange",
+  "version": "1.0.0",
+  "description": "This script provides an easy way to change the serial number (Modem-ID) of the Zyxel PMG3000-D20B SFP GPON ONU on firmware versions without access to SSH.",
+  "license": "GPL-3.0",
+  "author": "Av4aR",
+  "type": "module",
+  "main": "snchange.js",
+  "scripts": {
+    "start": "node snchange.js"
+  },
+  "dependencies": {
+    "ping": "^1.0.0"
+  }
+}
