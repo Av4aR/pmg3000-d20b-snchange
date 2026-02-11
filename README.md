@@ -4,7 +4,7 @@
 3. From within that folder, run `npm install` to download all project dependencies
 
 # Usage
-1. Make sure your PMG3000-D20B is plugged in to a networking device and connected to an active fiber
+1. Make sure your PMG3000-D20B is plugged in to a networking device and connected to a active fiber
 2. Make sure you can ping the IP of your PMG3000-D20B and access its web interface (default IP is 10.10.1.1/24)
 3. Write down your old modem's serial number or Modem-ID (they may not be interchangeable for your device. If unsure, use the Modem-ID!)
 4. From within the folder that contains this script, run `npm start`. The script will now guide you through the process step-by-step
@@ -28,7 +28,7 @@ Thankfully xvzf has a python script in his repo where it appears the **/cgi/set_
 
 ..Except it doesn't. No matter what combination or format I tried, I couldn't get the SN to change, the web server would respond with "1" for successfull exection but nothing ever happened. (More on that later)
 
-At this point, you can just [downgrade the firmware](https://gist.github.com/maurice-w/faeb60bf8201ce70391873bcb9059bc2) (thx to maurice-w for his massivly helpfull firmware collection!) to get SSH to work and change your SN using xvzf guide.
+At this point, you can just [downgrade the firmware](https://gist.github.com/maurice-w/faeb60bf8201ce70391873bcb9059bc2) (thx to maurice-w for his massivly helpful firmware collection!) to get SSH to work and change your SN using xvzf guide.
 But as much as this collection of various firmware versions is awsome, I just feel like running community provided (outdated) firmware should not really be the go-to solution.
 
 With that in mind I started up Ghidra and looked around the **/usr/local/bin/web** binary that is responsible for responding to those cgi requests.
